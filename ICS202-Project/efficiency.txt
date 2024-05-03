@@ -1,0 +1,22 @@
+addWord(String s) time complexity:
+This method adds a word to the AVL Tree if the word is not already existed, so it will take O(logn) for inserting the word, 
+which includes checking if the word already exists and when the word is inserted it also checks if the tree is balanced and if not, 
+it balances the tree, in a total complexity of O(logn). 
+
+findWord(String s) time complexity:
+This method searches for a word in the AVL Tree, which starts from the root and compares it with the word, 
+and decides to go to the left or right child or stop, and this will take O(logn).
+
+deleteWord(String s) time complexity:
+This method deletes the word provided if the word exists, so it will check if the word exists and then delete the word, 
+and check if the tree is balanced and if not, it balances the tree, in a total complexity of O(logn).
+
+findSimilar(String s) time complexity: 
+This method generates similar words to the provided word, 
+firstly the method will generate words that are less than the height of the provided word by one letter, 
+which will take O(a^2) (a is the length of the provided word), 
+since it will iterate over the word and in each iteration it will remove a letter, 
+then it will generate words with the same length as the provided word but differ in one letter, and this takes O(a * 26), 
+finally, it will generate the words that are more than the provided word by one, and this also takes O(a *26),
+with a total of O(a^2 + 26a + 26a), which equals O(a^2).
+then we will see if the word is in the AVL Tree, which is O(logn).
