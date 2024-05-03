@@ -1,0 +1,172 @@
+h1 {
+    margin-top: 30px; 
+    margin-bottom: 0px;
+}
+.top-tags {
+    grid-area: right;
+    position: absolute;
+    top: 240px;
+    right: 20px;
+    padding: 10px;
+    width: calc(66.666% - 400px);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.top-tags ul {
+     list-style-type: none;
+     text-decoration: none;
+    
+    padding: 0;
+}
+
+.top-tags ul li {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.top-tags ul li a {
+    text-decoration: none; 
+}
+.tag {
+    text-decoration: none;
+    background-color: #4a90e2;
+    color: #fefefe;
+    padding: 2px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.tag:hover {
+    background-color: #3277b5;
+}
+
+header,
+main,
+footer {
+    margin-right: calc(33.33% + 20px);
+}
+
+.button {
+    width: 150px; 
+    height: 40px; 
+    font-size: 12px; 
+    background: #1a3556; 
+    color: #fefefe;
+}
+
+main{
+    display: grid;
+    margin-left: 60px;
+   background-color: #fefefefe;
+    grid-template-areas: 
+    "top top ."
+    "left left right";
+}
+
+.top{
+    height: min-content;
+    grid-area: top;
+    padding: 20px;
+}
+
+.top>h1{
+    display: inline; 
+    margin-bottom: 1px;
+}
+#newQuestion{
+    display: inline;
+    float: right;
+}
+
+.left{
+    
+    padding: 20px;
+    grid-area: left;
+}
+
+.left>div{
+    border-bottom:1px solid;
+}
+.left h2{
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+
+.left p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+   
+}
+
+.newQuestion{
+    display: block;
+    border: solid 2px #1a3556;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    height: max-content;
+    padding: 10px;
+    width:65%;
+}
+.newQuestion>*{
+    margin: 20px;
+    padding-top: 10px;
+    
+   
+}
+.newQuestion>p>label{
+    display: inline-block;
+    margin-right: 0;
+    width: 80px;
+}
+.newQuestion>p{
+    margin: 0;
+}
+.newQuestion>p>*{
+    display: inline-block;
+    margin: 10px;
+    width: 74%;
+    
+}
+.newQuestion h2{
+    margin-left: 10;
+}
+
+textarea{
+    resize: none;
+    
+    border:2px solid #dadada;
+    font-size:16px;
+    border-radius:8px;
+
+}
+#x{
+    display: flex;
+    float: right; 
+    margin-right: 10;
+}
+input.newQuestion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5;
+    width: 75%;
+    height: 25;
+    border-radius:8px;
+    border: none;
+    border:2px solid #dadada;
+
+    
+}
+.right{   padding: 20px;
+margin-left: 20px;
+grid-area: right;
+
+}
+.askedBy, .left p>a {
+    display: inline-flex;
+    
+}
+.askedBy{
+    float: right;
+}

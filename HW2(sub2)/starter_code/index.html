@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>  Login/Register - User Profile </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="HeaderFooter.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+    <header>
+        
+        <div class="circle">
+        <img src="images/AskItNowLogo.png" alt="AskIt">
+        
+    </div>
+        
+        
+        
+            <a href="index.html" id="txt">AskItNow</a><br>
+           
+        <input type="text" name="Search" id="Search" placeholder="Search questions..." >  <br>
+        
+        
+        <a href="auth.html">Login</a>
+        <div class="circle">
+        <img alt="Avatar"
+        src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash"><br>
+    </div>
+    </header>
+    
+    
+    
+    
+
+
+
+
+<main>
+    <div class="top" >
+<h1> All Questions</h1>
+<input type="button" value="➕Ask a New Question " class="button" id="newQuestion"><br>
+
+
+
+
+
+<label for="sortby">Sort by:</label>
+<select name="sortby">
+    <option value="Newest">Newest</option>
+    <option value="Oldest">Oldest</option>
+    <option value="MostAnswered">Most Answered</option>
+   
+  </select>
+    
+  <label for="Filter">Filter:</label>
+  <select name="Filter">
+      <option value="All">All</option>
+      <option value="Answered">Answered</option>
+      <option value="Unanswered">Unanswered</option>
+     
+    </select><br>
+      
+</div>
+<div class="left" > 
+         <div class="Q1">
+                ✔<br>
+                3 Answers<br>
+          
+    
+
+        <h2>
+            <a href="question.html">How do I solve a NullPointerException in Java?</a></h2>
+        
+        <p>
+            I'm getting a NullPointerException when trying to access...
+        </p> 
+          
+        <p>  
+            <a href="question.html" class="tag">java</a>
+                <a href="question.html" class="tag">nullpointerexception</a>
+              
+                    
+                <label class="askedBy" for="">
+        
+                
+                    Asked by: Ali Ahmed<br>
+                    Asked on: 11/01/2024
+                
+                        
+                </label>
+                </p>
+                      
+            </div>
+                        
+            <div class="Q1">
+            
+            1 Answer
+            <h2>
+                <a href="question.html"> How to convert a string to lowercase in
+                    Python?</a>
+                </h2>
+        
+        <p>
+            I have a string and I want to convert...
+            
+        </p>
+            
+                <p>
+                    <a href="question.html" class="tag">python</a>
+                    <a href="question.html" class="tag">string</a>
+                    
+                    <label class="askedBy" for="">
+                    Asked by: Khalid Ahmed <br>
+                    Asked on: 01/01/2024
+                </label>
+                
+            </p>
+        </div>
+
+
+<p></p>
+
+                <div class="newQuestion" >
+    
+        <h2>
+            Ask a New Question
+            &#10005;
+        </h2>
+        
+        <p>
+            <label for="Title">Title</label>
+            <input type="text" name="Title" id="Title"><br>
+        
+        
+        
+          <label for="Details">Details</label>
+          <textarea id="Details" name="Details"  rows="5" cols="20"></textarea><br>
+
+          
+          
+          
+          
+          <label for="Tags">Tags</label>
+          <input type="Tags" name="Tags" id="Tags" placeholder="e.g java, nullpointerexception">
+     
+      
+      
+          
+        </p>
+          <input type="button" value=" Submit Question" class="button" ><br>
+            
+</div>   
+</div>    
+        
+        
+        
+            
+        
+    
+
+
+    <div class="right">
+          <div class="top-tags">
+            <h2>Top Tags</h2>
+            
+                <ul>
+                <li><a href="question.html"><span class="tag">java</span></a> (10)</li>
+                <li><a href="question.html"><span class="tag">python</span></a> (5)</li>
+                <li><a href="question.html"><span class="tag">javascript</span></a> (3)</li>
+                <li><a href="question.html"><span class="tag">array</span></a> (2)</li>
+                <li><a href="question.html"><span class="tag">string</span></a> (1)</li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    </main>
+<footer >
+    <label for="">&copy; 2024 <p id="txt" style="display: inline;">Ask It Now</p> Q&A Platform - All rights reserved.</label>
+  </footer>
+
+
+
+</html>
+
